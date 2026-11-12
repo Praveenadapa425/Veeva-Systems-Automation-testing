@@ -14,7 +14,12 @@ public class test {
         System.out.println(driver.getTitle());
 
 
-//        driver.get()
+        driver.get("https://youtube.com");
+        System.out.println("Title name: "+driver.getTitle());
+
+        driver.get("https://maya.adityauniversity.in/");
+
+        System.out.println("Page Title: " + driver.getTitle());
 
         driver.quit();
     }
