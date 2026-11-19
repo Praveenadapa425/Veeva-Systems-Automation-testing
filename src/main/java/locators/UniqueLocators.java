@@ -20,6 +20,18 @@ public class UniqueLocators {
         driver.findElement(By.id("login-button")).click();
         Thread.sleep(2000);
 
+        //links are two types
+        //linkText
+        //Here we need use complete link text
+        driver.findElement(By.linkText("Sauce Labs Backpack")).click();
+        Thread.sleep(2000);
+        driver.navigate().back();
+        Thread.sleep(2000);
+
+        //partialLinkText
+        //Actual link text is "Sauce Labs Bike Light" and we can partial link text
+        driver.findElement(By.partialLinkText("Bike Light")).click();
+        Thread.sleep(2000);
         driver.quit();
     }
 }
