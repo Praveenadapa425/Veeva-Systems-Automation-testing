@@ -1,4 +1,4 @@
-package Session2;
+package session2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

@@ -12,17 +12,18 @@ public class XPathDemo {
         Thread.sleep(3000);
 
         //abs xpath
-        driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]")).sendKeys("Praveen");
+        driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]")).sendKeys("tomsmith");
 
         //relative xpath
         //driver.findElement(By.xpath("//input[@id='username']")).sendKeys("Praveen");
-        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("ABC123d");
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("SuperSecretPassword!");
         Thread.sleep(3000);
 
         driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']")).click();
         Thread.sleep(3000);
 
-
+        driver.findElement(By.xpath("//i[@class='icon-2x icon-signout']")).click();
+        Thread.sleep(3000);
         driver.quit();
 
 
