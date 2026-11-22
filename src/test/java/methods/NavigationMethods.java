@@ -19,12 +19,15 @@ public class NavigationMethods {
 
         driver.findElement(By.xpath("//a[normalize-space()='Contact']")).click();
         Thread.sleep(2000);
+
         //back
         driver.navigate().back();
         Thread.sleep(2000);
+
         //forward
         driver.navigate().forward();
         Thread.sleep(2000);
+
         //refresh
         driver.navigate().refresh();
 
