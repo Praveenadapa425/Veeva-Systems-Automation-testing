@@ -11,7 +11,7 @@ import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.function.Function;
 
-public class FluentWaitDemo {
+public class FluentWaitMethodDemo {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
 
