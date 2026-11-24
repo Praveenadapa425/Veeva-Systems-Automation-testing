@@ -23,7 +23,7 @@ public class NestedFrames {
         //Acessing main_page -> top Frame -> left Frame
         System.out.println(driver.findElement(By.xpath("//body")).getText());
 
-        //switch to manin page  not to top frame
+        //switch to manin page (not to top frame)
         driver.switchTo().defaultContent();
 
 
@@ -31,12 +31,13 @@ public class NestedFrames {
         WebElement bottom = driver.findElement(By.xpath("//frame[@src='/frame_bottom']"));
         driver.switchTo().frame(bottom);
 
+        //Acessing the bottom frame content
         System.out.println(driver.findElement(By.xpath("//body")).getText());
 
         //back to main page
         driver.switchTo().defaultContent();
 
-        driver.quit();
+        driver.close();  //closing the resource
 
     }
 }
