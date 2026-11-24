@@ -24,11 +24,18 @@ public class HandleAlertWithExplicitWait {
         //gernral way using switchTo()
         //Alert myalert = driver.switchTo().alert();
 
-         //using Explict wait
+        //using Explict wait
         Alert myalert = wait.until(ExpectedConditions.alertIsPresent());
         Thread.sleep(2000);
+
+        //to get text in alert
         System.out.println(myalert.getText());
+
+        //to accept the alert
         myalert.accept();
+        Thread.sleep(2000);
+
+        driver.quit();
 
     }
 }
