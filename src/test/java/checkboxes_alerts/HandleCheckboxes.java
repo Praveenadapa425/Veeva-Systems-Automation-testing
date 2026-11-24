@@ -9,7 +9,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class HandleCheckboxes {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://testautomationpractice.blogspot.com/");
 
@@ -31,6 +31,9 @@ public class HandleCheckboxes {
             checkBoxes.get(i).click();
 
         }
+        Thread.sleep(3000);
+
+        driver.quit();
 
 
     }
