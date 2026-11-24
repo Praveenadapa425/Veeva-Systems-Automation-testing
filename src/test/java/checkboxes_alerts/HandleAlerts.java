@@ -13,9 +13,21 @@ public class HandleAlerts {
         Thread.sleep(2000);
 
         //normal alert
-        driver.findElement(By.xpath("//button[normalize-space()='Click for JS Alert']")).click();
+        /*driver.findElement(By.xpath("//button[normalize-space()='Click for JS Alert']")).click();
         Alert myalert = driver.switchTo().alert();
-        myalert.accept();
-        Thread.sleep(2000);
+        System.out.println(myalert.getText());
+        myalert.accept(); */
+
+        //confirm alert
+//        driver.findElement(By.xpath("//button[normalize-space()='Click for JS Confirm']")).click();
+//        Alert myalert = driver.switchTo().alert();
+//        //myalert.accept();  //to click ok button
+//        myalert.dismiss();   //to click cancel button
+//
+//        Thread.sleep(2000);
+
+        //prompt alert
+
+
     }
 }
