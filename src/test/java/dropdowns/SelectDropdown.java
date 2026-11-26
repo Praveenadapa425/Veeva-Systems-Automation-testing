@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.time.Duration;
 
 public class SelectDropdown {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/dropdown");
 
@@ -25,6 +25,14 @@ public class SelectDropdown {
         //dropdown.selectByVisibleText("Option 1");
 
         //Selecting by index.Index start by 0
-        dropdown.selectByIndex(2);
+        //dropdown.selectByIndex(2);
+
+        //Selcting by value
+        dropdown.selectByValue("1");
+
+
+       Thread.sleep(5000);
+       driver.quit();
+
     }
 }
