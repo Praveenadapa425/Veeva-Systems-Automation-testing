@@ -21,7 +21,10 @@ public class SelectDropdown {
         WebElement dropdownEl = driver.findElement(By.id("dropdown"));
         Select dropdown = new Select(dropdownEl);
 
-        dropdown.selectByVisibleText("Option 1");
+        //Selecting by visble text
+        //dropdown.selectByVisibleText("Option 1");
 
+        //Selecting by index.Index start by 0
+        dropdown.selectByIndex(2);
     }
 }
