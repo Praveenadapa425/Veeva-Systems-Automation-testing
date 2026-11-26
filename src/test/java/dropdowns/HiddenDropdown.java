@@ -18,5 +18,20 @@ public class HiddenDropdown {
         driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
         driver.findElement(By.cssSelector("button[type='submit']")).click();
 
+        //opening required page
+        driver.findElement(By.xpath("//span[normalize-space()='Admin']")).click();
+
+        //Clicking dropdown
+        driver.findElement(By.xpath("//div[contains(@class,'oxd-select-text-input')]")).click();
+
+        //Here we can't find element
+        //we need go to console -> eventListener -> bulr then remove there option
+        driver.findElement(By.xpath(
+                "//div[@role='option']//span[normalize-space()='Admin']"
+        )).click();
+
+
+        Thread.sleep(5000);
+        driver.quit();
     }
 }
