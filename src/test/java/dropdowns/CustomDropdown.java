@@ -22,5 +22,9 @@ public class CustomDropdown {
         //Selecting mango
         driver.findElement(By.xpath("//div[@id='fruit-mango']")).click();
 
+        //Here we can't use select class
+        Thread.sleep(5000);
+        driver.quit();
+
     }
 }
