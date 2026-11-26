@@ -19,6 +19,8 @@ public class CustomDropdown {
         //clicking dropdown
         driver.findElement(By.xpath("//div[@id='fruit-combo']")).click();
 
+        //Selecting mango
+        driver.findElement(By.xpath("//div[@id='fruit-mango']")).click();
 
     }
 }
